@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+/* navbar */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+nav{
+    height: 50px;
+}
+.navbar-inner{
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-navbar .image{
+    width: 160px;
+    height: 29px;
+}
+.image img{
+    width: 100%;
+    object-fit: cover;
+}
+.navbar-alt{
+    display: none;
+}
+.menu-main{
+    list-style: none;
+    color:#e0e0e0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-main > *{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 15px ;
+    font-weight: 500;
+}
+.menu-main li:hover{
+    color: white;
+}
+.menu-item-has-children{
+    position: relative;
+}
+.menu-item-has-children:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-menu{
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 33px;
+    list-style: none;
+    background-color: rgba(0,0,0,0.8);
+    padding-left: 0;
+}
+.sub-menu > *{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+}
+.sub-menu li{
+    position: relative;
+}
+
+.sub-menu li:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width:200px;
+    background-color: white;
+}
+
+.right-navbar{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #e0e0e0;
+}
+
+.right-navbar ul{
+    font-weight: 500;
+    font-size: 13px;
+    list-style: none;
+}
+
+.right-navbar ul li{
+    display: inline-block;
+}
+
+.right-navbar ul li:hover{
+    color: white;
+}
+
+
+/* background */
+
+.background .img{
+    background:url("https://ultramusicfestival.com/wp-content/uploads/2019/07/miami-bg-2020-2.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* wrapper-content */
+
+.wrapper-content{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-content .img {
+    padding: 110px 45px auto;
+}
+
+.wrapper-content .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* footer */
+
+.pp-footer .footer{
+    background-color: rgba(0, 0, 0,0.8);
+    padding: 30px;
+}
+
+.inner{
+    margin: auto;
+    padding-top: 50px;
+    width: 980px;
+    max-width: 100%;
+}
+
+.up-footer{
+    width: 35%;
+}
+
+.image-block{
+    margin-bottom: 2em;
+    display: block;
+    width: 100%;
+}
+
+.inner-images{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.image-start{
+    font-size: 14px;
+    line-height: 1.4;
+    color:#ccc !important;
+    margin-bottom: 2em;
+}
+
+.styled-form{
+     padding-bottom: 36px;
+}
+
+#email{
+    background-color: transparent;
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 28px;
+    border: 1px solid white;
+}
+.styled-form button{
+    width: 325px;
+    padding: 12px;
+    background-color: #94f2ff;
+    color: black;
+    border: none;
+}
+
+.footer-left{
+    color: #ccc;
+}
+
+.contact-details{
+    color: #ccc;
+}
+
+.break{
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+}
+
+.links ul{
+    font-size: 14;
+    line-height: 1.4;
+    list-style: none;
+    padding-left: 0;
+}
+
+.links ul li{
+    padding: 0 20px;
+}
+
+.text-center{
+    text-align: center;
+    color:#ccc;
+}
+
+.icons .social-links{
+    padding: 30px 0px;
+    display: flex;
+    list-style: none;
+    width: 40%;
+    margin: auto;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.clearfix{
+    clear: both;
+}
